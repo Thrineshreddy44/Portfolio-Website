@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<!-- ----------------------------------Home--------------------------------------- -->
+<body>
+    <div id="header">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="menu-bar" type="none">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <section class="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Thrinesh Reddy Anugu</h1>
+                <h3>And <span class="text"></span></h3>
+                
+                <div class="cont">
+                    <a href="https://www.linkedin.com/in/thrinesh-reddy-anugu-4614b0272" target="_main" style="--i:1" class="linked"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.instagram.com/m_r_tommy/" target="_main" style="--i:2" class="insta"><i class='bx bxl-instagram' ></i></i></a>
+                    <a href="https://wa.me/9392183182" target="_main" style="--i:3" class="wts"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://github.com/Thrineshreddy44" style="--i:4" class="git" target="_main"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="#about" class="btn-box">More About Me</a>          
+            </div> 
+            <div>
+                <img src="port1.png" class="home-img" >
+            </div>
+        </section>
+    </div>
+<!-- ---------------------------------About Me------------------------------------- -->
+    <div class="about" id="about">
+        <div>
+            <img src="port2.jpg" class="about-img" >
+        </div>
+        <div class="about-text">
+            <h2 class="sub1">About Me</h2><br>
+            <p class="sub3">I'm a passionate Web Developer Intern at CodeSpaze. With a B.Tech in (ECE) Electronics and Communication Engineering from MLRITM, which I completed in 2024, my journey in the tech world began with my fascination for coding and development, which has now evolved into a dedicated career path. Currently, I'm honing my skills as a Web Developer Intern at CodeSpaze, where I'm involved in developing and maintaining web applications and continuously learning and adapting to new technologies and methodologies. My skill set includes Java, OOPs, Python, HTML, CSS, JavaScript, and SQL. I aspire to further develop my skills in web development and take on more challenging projects, aiming to contribute to innovative tech solutions that make a positive impact. Thank you for taking the time to learn a bit about me.</p>
+        </div>
+    </div>
+<!-- ----------------------------------Education----------------------------------- -->
+    <div id="education">
+        <div class="container">
+            <h1 class="sub1">Education</h1>
+            <div class="edu-list">
+                <div>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>B.Tech</h2>
+                    <pre>- MLR Institute of Technology and <br>  Management</pre>
+                    <p>- ECE</p>
+                    <p>- CGPA:7.3</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h2>Intermediate</h2>
+                    <p>- Sri Gayatri Junior College</p>
+                    <p>- MPC</p>
+                    <p>- 89.5%</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>SSC</h2>
+                    <p>- Vignan High School</p>
+                    <p>- CGPA:7.7</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------------Projects-------------------------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub1">Projects</h1>
+            <div class="project-list">
+                <div class="portfolio">
+                    <img src="fol.jpg">
+                    <div class="slideup">
+                        <h3>Portfolio Website</h3>
+                        <a href="https://github.com/Thrineshreddy44/Portfolio-Website.git" target="_main"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="fol.jpg">
+                    <div class="slideup">
+                        <h3>Portfolio Website</h3>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="fol.jpg">
+                    <div class="slideup">
+                        <h3>Portfolio Website</h3>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------------Contact--------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub1">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>tommy44302@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9392183182</p>
+                    <a href="Thrinesh Reddy.pdf" download class="btn">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <span id="msg"></span>
+                        <button type="submit" class="btn btn1">Submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="index.js"></script>
+</body>
+</html>
