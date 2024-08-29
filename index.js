@@ -1,3 +1,27 @@
+/* ------------------------------------------Splash Screen pg--------------------------------------- */
+window.onload = function() {
+    const titleText = "Welcome to My Portfolio.";
+    const titleElement = document.getElementById("splash-title");
+    let index = 0; 
+    function typeLetter() {
+        if (index < titleText.length) {
+            titleElement.textContent += titleText[index]; 
+            index++; 
+            setTimeout(typeLetter, 100); 
+        } else {
+            setTimeout(function() {
+                document.getElementById("splash-screen").style.display = "none"; 
+                document.body.style.overflow = "auto"; 
+                const nav = document.querySelector('nav');
+                nav.style.display = "flex";
+            }, 3000); 
+        }
+    }
+
+    typeLetter(); 
+};
+
+
 //------------------------------Home pg Animation-----------------------------------
 let type1 = new Typed(".text", {
     strings: ["a Web Developer Intern at CodeSpaze."],
