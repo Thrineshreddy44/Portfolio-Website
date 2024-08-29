@@ -54,7 +54,6 @@ body {
     width: auto;
     margin-left: 2rem;
     animation: sliderright 1s ease-out forwards;
-    animation-delay: 1s;
 }
 
 body {
@@ -62,21 +61,22 @@ body {
 }
 
 nav {
-    display: none; /* Hide nav initially */
+    display: none; 
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     box-shadow: 0 1rem 1rem rgb(56, 52, 52, 0.5);
 }
 
-ul, li {
+ul, li, a{
     display: inline-block;
-    margin: 0.6rem 1.3rem; 
-    right: 0; 
-    animation: slidebottom 1s ease-out forwards;
-    animation-delay: 1s;
-}
-
+    margin: 0.6rem .8rem; 
+    right: 0;  
+    transition: 1s ease; 
+    animation: slidebottom 2s ease-in-out forwards;
+    animation-delay: calc(.3s * var(--i)); 
+} 
+ 
 nav {
     background-color: #000000e3;
     position: fixed;
@@ -139,7 +139,7 @@ nav ul li a:hover::after {
     font-size: 2rem; 
     font-weight: 700;
     animation: slidebottom 1s ease-out forwards;
-    animation-delay: 1s;
+    animation-delay: 6s;
 }
 
 @keyframes slidebottom
@@ -164,7 +164,7 @@ nav ul li a:hover::after {
     font-size: 3.1rem; 
     font-weight: 700;
     animation: sliderright 1s ease-out forwards;
-    animation-delay: 1s;
+    animation-delay: 6s;
 }
 
 @keyframes sliderright
@@ -194,8 +194,7 @@ nav ul li a:hover::after {
     font-size: 1.3rem; 
     transition: 1s ease;
     animation: sliderright 1s ease-in-out forwards;
-    animation-delay: calc(.2s * var(--i));
-    animation-delay: 3s;
+    animation-delay: calc(5s + (.2s * var(--i)));
 }
 
 .cont .git:hover
@@ -228,6 +227,7 @@ nav ul li a:hover::after {
 
 .btn-box {
     display: inline-block;
+    margin: 0;
     padding: 0.6rem 1.6rem; 
     color: #fff;
     letter-spacing: 0.1rem; 
@@ -237,7 +237,7 @@ nav ul li a:hover::after {
     font-size: 1.1rem; 
     font-weight: 700;
     animation: slidetop 1s ease-out forwards;
-    animation-delay: 3s;
+    animation-delay: 6s;
 }
 
 .btn-box:hover
